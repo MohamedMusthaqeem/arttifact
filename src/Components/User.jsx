@@ -50,7 +50,12 @@ const User = () => {
   };
   return (
     <>
-      <div className="w-full min-h-screen">
+      <div
+        className="w-full min-h-screen bg-cover  bg-no-repeat "
+        style={{
+          backgroundImage: `url('https://img.freepik.com/premium-vector/decorative-line-white-background_189483-27.jpg?size=626&ext=jpg&ga=GA1.1.1221402960.1727698227&semt=ais_hybrid')`,
+        }}
+      >
         <div className="">
           <form action="" className="space-y-5 m-6">
             <h1 className="text-2xl font-bold">Personal Information</h1>
@@ -151,13 +156,13 @@ const User = () => {
             </div>
           </form>
           <button
-            className="py-2 my-3 bg-black text-white w-1/4 mx-6"
+            className="py-2 my-3 bg-blue-600 text-white w-1/4 mx-6 rounded-md"
             onClick={fetchLoc}
           >
             Fetch Location
           </button>
           <button
-            className="py-2 my-3 bg-black text-white w-1/4 mx-6"
+            className="py-2 my-3 bg-blue-600 text-white w-1/4 mx-6 rounded-md"
             onClick={handleSubmit}
           >
             ADD USER
